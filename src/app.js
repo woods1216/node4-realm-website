@@ -36,7 +36,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        message: 'please use responsibly',
+        //message: 'please use responsibly',
         title: 'help',
         name: 'Abhisek Pramanik'
     });
