@@ -8,14 +8,18 @@
         <div class="main-content">
             {{>header}}
             <!-- <p>{{message}}</p> -->
-            <p>Back custom API used:
-                https://pramanik-weather-application.herokuapp.com/weather?address=Boston</p>
+            <p>custom API used:
+                <li>{domain}/weather?address=Boston</li>
+                <li>{domain}/deletehistory</li>
+                <li>{domain}/generatesamples</li>
+            </p>
             <p>MapBox API:
                 https://api.mapbox.com/geocoding/v5/mapbox.places/${your_search_location}.json?access_token={your_token}&limit=1`</p>
             <p>Weatherstack API:
                 http://api.weatherstack.com/current?access_key={your_token}&query={latitide},{longitude}&units=f</p>
         </div>
         {{>footer}}
+       <!--<script src="/sw.js"></script>-->
     </body>
 
 </html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>History</title>
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+
+            <p>
+                <p><b>Usage History</b></li></p>
+                <p><button id="delhistory">Clear History</button></p>
+                <p><button id="datagen">Generate Sample Data</button></p>
+            </p>
+            {{#each data}}
+                <p>{{this.timestamp}}</p>
+                <li>Address: {{this.address}}</li>
+                <li>latitide: {{this.latitide}} longitude: {{this.longitude}}</li>
+                <li>Returned location: {{this.location}}</li>
+                <li>Temperature: {{this.temperature}} Feels like: {{this.feelsLike}}</li>
+                <li>Description: {{this.weatherDscriptions}} Precipitation: {{this.precipitation}}</li>
+            {{/each}}
+            <p id="message-del"></p>
+        </div>
+        {{>footer}}
+       <!--<script src="/sw.js"></script>-->
+        <script src="/js/app.js"></script>
+    </body>
+
+</html>
